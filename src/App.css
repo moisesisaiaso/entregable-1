@@ -1,38 +1,82 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/** New*/
+.card {
+    padding: 20px 35px 20px 35px !important;
+    font-family: "Lato", sans-serif !important;
+    border-radius: 40px;
+    background: #ecf0f3 !important;
+    box-shadow: 8px 8px 10px #cbced1, -8px -8px 10px #ffffff;
+    margin-top: 20px !important;
+    margin: 25px;
+    font-size: 15px;
+    min-width: 300px;
+}
+
+p {
+    text-align: center;
+    text-shadow: 1px 2px 2px black;
+    font-size: 22px;
+}
+
+.author {
+    text-align: end;
+    text-shadow: 2px 2px 2px black;
+    font-size: 25px;
+}
+
+button {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 20px 10px 20px 5px;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif !important;
+    color: #fff !important;
+    text-align: center;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: 0.5s;
+    float: right;
 }
