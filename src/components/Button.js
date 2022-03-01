@@ -1,14 +1,9 @@
 import React from "react";
 import "../App.css";
+import quotes from "../quotes.json";
 
-const button = ({
-    arrayColors,
-    color,
-    setColor,
-    arrayQuotes,
-    phraseAndAuthor,
-    setPhraseAndAuthor,
-}) => {
+const getRandom = () => Math.floor(Math.random() * quotes.length);
+const button = ({ arrayColors, color, setColor, setPhraseAndAuthor }) => {
     const changeColor = () => {
         if (color < arrayColors.length - 1) {
             //el problema surgia por que al ejecutarse la función del evento no había como evaluar la variable de incremento ya que no sabemos su valor actual, por eso con los estados se soluciona
@@ -18,11 +13,8 @@ const button = ({
             setColor(0);
         }
 
-        if (phraseAndAuthor < arrayQuotes.length - 1) {
-            setPhraseAndAuthor(phraseAndAuthor + 1);
-        } else {
-            setPhraseAndAuthor(0);
-        }
+        const random = getRandom();
+        setPhraseAndAuthor(random);
     };
     return (
         <>
